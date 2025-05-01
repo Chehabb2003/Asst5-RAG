@@ -1,0 +1,17 @@
+Gold Test Set:
+question,answerable,start_sec,end_sec
+"What seminar series is the talk part of?",yes,0,5
+"Which two reconfiguration problems are the main focus of the talk?",yes,13,25
+"How many sections does the speaker say the talk will have?",yes,115,130
+"Which one-player puzzle game is used to introduce combinatorial reconfiguration?",yes,206,220
+"What is the permissible move in the 15-puzzle example (moving a number into ____)?",yes,219,235
+"Which NP-complete problem does the speaker use as a second example of reconfiguration?",yes,597,610
+"In the SAT example, what single operation moves between satisfying assignments?",yes,609,640
+"Which classic graph problem is cited as another reconfiguration case study?",yes,671,685
+"During the introduction, what does the speaker encourage the audience to do if something is unclear?",yes,179,194
+"What collaborative relationship does the speaker highlight (joint work begun at a workshop almost two years ago)?",yes,91,110
+"Does the speaker prove P = NP during this talk?",no,,
+"Does the talk discuss quantum computing implementations of token jumping?",no,,
+"Does the speaker explain how token sliding applies to distributed ledger technology?",no,,
+"Is there a live demonstration of physical tokens on a chessboard in the video?",no,,
+"Does the presentation include a section on machine-learning approaches to reconfiguration problems?",no,,
