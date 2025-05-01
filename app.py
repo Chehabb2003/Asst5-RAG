@@ -29,10 +29,13 @@ faiss_index.add(text_embs)
 # 3. LOAD MODELS & VECTORIZERS
 # ───────────────────────────────────────────
 # Use the state-of-the-art e5-large-v2 encoder
-text_model = SentenceTransformer(
-    "intfloat/e5-large-v2",
-    device="cpu"
-)
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+# load the model without the `device=` argument
+text_model = SentenceTransformer("intfloat/e5-large-v2")
+
+# then explicitly move it
+text_model = text_model.to(device)
 # Lexical baselines
 vectorizer   = TfidfVectorizer().fit(df['text'])
 tfidf_matrix = vectorizer.transform(df['text'])
